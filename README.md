@@ -1,5 +1,6 @@
 # minecraft-phantom
 Run a [minecraft phantom proxy](https://github.com/jhead/phantom) in a Docker container.
+> Forked from [nguyer/minecraft-phantom](https://github.com/nguyer/minecraft-phantom)
 
 > *Makes hosted Bedrock/MCPE servers show up as LAN servers, specifically for Xbox.*
 >
@@ -12,9 +13,7 @@ Here is a `docker run` command that run the proxy in the background and automati
     $ sudo docker run -it -d --name=minecraft-phantom\
         --net=host\
         --restart=unless-stopped\
-        -e SERVER=[your_server_ip]:[your_server_port]
+        -e HOST=[your_server_ip]\
+        -e PORT=[your_server_port]\
+        -e PHANTOM_TAG=[phanton_tag]
         nguyer/minecraft-phantom
-
-Hopefully this is helpful to folks. Happy Minecrafting!
-
- -- nguyer
