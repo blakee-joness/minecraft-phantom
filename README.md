@@ -16,4 +16,4 @@ Here is a `docker run` command that run the proxy in the background and automati
         -e HOST=[your_server_ip]\
         -e PORT=[your_server_port]\
         -e PHANTOM_TAG=[phanton_tag]
-        nguyer/minecraft-phantom
+        blakee-joness/minecraft-phantom
